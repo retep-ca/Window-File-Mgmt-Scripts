@@ -1,0 +1,4 @@
+## CMD - Dumps Folder File Names to a Text File
+
+dir /b >> text.txt
+
