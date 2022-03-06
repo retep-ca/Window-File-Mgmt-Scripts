@@ -1,0 +1,10 @@
+#Powershell Script to rename File with specific extension to Folder Name
+# WARNING: This does need some work as will get a folder renamed to {.extension} from time to time and the file inside to .{extension}
+#Get-ChildItem Y:\Newfolder -Filter *.{extension} -Recurse | Rename-Item -NewName { $_.Directory.Name+'.{extension}'}
+
+#Media Files
+
+Get-ChildItem Y:\Newfolder -Filter *.mp4 -Recurse | Rename-Item -NewName { $_.Directory.Name+'.mp4'}
+Get-ChildItem Y:\Newfolder -Filter *.wmv -Recurse | Rename-Item -NewName { $_.Directory.Name+'.wmv'}
+Get-ChildItem Y:\Newfolder -Filter *.mkv -Recurse | Rename-Item -NewName { $_.Directory.Name+'.mkv'}
+Get-ChildItem Y:\Newfolder -Filter *.mpeg -Recurse | Rename-Item -NewName { $_.Directory.Name+'.mpeg'}
